@@ -1,0 +1,16 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+#page{width: 100%;height: 100%;}
+#box{margin-top:30px;margin-left: auto;margin-right: auto;max-width: 385px;min-height: 500px;border: 1px solid black;}
+.upper{display: flex;justify-content: center;}
+.head{width:315px;height: 305px;border-radius: 48%;border: 2px solid black;background: #09B9E4;display: flex;justify-content: center;flex-wrap: wrap;}
+.eyes{margin-top: 52px;position: relative;z-index: 4;}
+.eye{background: #ffffff;width: 75px;height: 85px;border-radius: 34px;display: inline-block;border: 2px solid black ;}
+.face{display: flex;justify-content: center;width: 257px;height: 195px;border-radius: 120px;border:2px solid black;position: relative;z-index: 2;top: -47px;background: #ffffff;}
+.right-eye{margin-left: -5px;}
+.pupils{width: 15px;height: 15px;border-radius: 50%;background: #333333;display: inline-block;position: absolute;top: 50px;}
+.left-pupils{left: 49px;}
+.right-pupils{left: 85px;}
+.nose{width: 36px;height: 36px;border:2px solid black;background: #C93E00;border-radius: 50%;margin-top: 27px;}
+.mouth{}
+
+.beard{}
