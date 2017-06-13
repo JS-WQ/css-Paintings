@@ -1,7 +1,7 @@
-*{padding: 0;margin: 0;box-sizing: border-box;}
+*{padding: 0;margin: 0;box-sizing: border-box;list-style: none;}
 #page{width: 100%;height: 100%;}
-#box{margin-top:30px;margin-left: auto;margin-right: auto;max-width: 385px;min-height: 500px;border: 1px solid black;}
-.upper{display: flex;justify-content: center;}
+#box{position:relative;margin-top:30px;margin-left: auto;margin-right: auto;max-width: 385px;min-height: 500px;}
+.upper{display: flex;justify-content: center;position: relative;}
 .head{width:315px;height: 305px;border-radius: 48%;border: 2px solid black;background: #09B9E4;display: flex;justify-content: center;flex-wrap: wrap;}
 .eyes{margin-top: 52px;position: relative;z-index: 4;}
 .eye{background: #ffffff;width: 75px;height: 85px;border-radius: 34px;display: inline-block;border: 2px solid black ;}
@@ -11,6 +11,40 @@
 .left-pupils{left: 49px;}
 .right-pupils{left: 85px;}
 .nose{width: 36px;height: 36px;border:2px solid black;background: #C93E00;border-radius: 50%;margin-top: 27px;}
-.mouth{}
-
-.beard{}
+.bg-nose{width: 5px;height: 5px;border-radius: 50%;background: #ffffff;display: block;margin-left: 20px;margin-top: 10px;box-shadow: 0px 0px 5px 3px #ffffff;}
+.bridge{height: 86px;width: 2px;background: #000000;position: absolute;top: 61px;}
+.mouth{width: 172px;height: 172px;border-bottom:3px solid #000000;position: absolute;top: -23px;border-radius: 88px;clip: rect(135px auto auto auto)}
+.beard{position: absolute;width: 192px;height: 50px;top: 60px;}
+.beard ol li{width: 60px;height: 2px;background:#000000;display: block;margin-bottom: 18px;}
+.left-bear{position: absolute;left: 2px;}
+.left-bear>li:nth-child(1){transform: rotate(18deg);}
+.left-bear>li:nth-child(3){transform: rotate(-14deg);}
+.right-bear{position: absolute;right: 2px;}
+.right-bear>li:nth-child(1){transform: rotate(-18deg);}
+.right-bear>li:nth-child(3){transform: rotate(14deg);}
+.chin{display: flex;justify-content: center;position: absolute;top: -30px;}
+.neck{width: 215px;height: 22px;border: 2px solid #000000;position: absolute;top: 302px;z-index: 4;border-radius: 8px;background: #AB2700;}
+.bells{width: 40px;height: 40px;border-radius: 50%;border: 2px solid black;
+position: absolute;top: 310px;z-index: 5;background: #F5ED2A;display: flex;justify-content: center;
+}
+.bells span:nth-child(1){width: 36px;height: 6px;display: block;border:2px solid black;
+margin-top: 9px;border-radius: 2px;}
+.bells span:nth-child(2){width: 11px;height: 9px;border-radius: 46%;background: black;
+position: absolute;top: 18px;}
+.bells span:nth-child(3){width: 2px;height: 10px;position: absolute;background: black;top: 26px;}
+.body{width: 216px;height: 158px;background: #09B9E4;border: 2px solid black;position: absolute;left: 50%;margin-left: -108px;margin-top: -14px;}
+.bellyband{width: 170px;height: 170px;border-radius: 50%;border:2px solid black;margin-top: -50px;background: #ffffff;margin-left: auto;margin-right: auto;}
+.semicircle{width: 130px;height: 65px;border-radius: 0 0 65px 65px;border:2px solid black;margin-left: auto;margin-right: auto;margin-top: 86px;}
+.body-circle{width: 25px;border:2px solid black;background: #ffffff;position: absolute;
+border-radius: 14.5px 14.5px 0 0;height: 14.5px;left: 93px;top: 141px;border-bottom: transparent;}
+.hand-left{transform: rotate(-28deg);transform-origin: 64px 20px;position: absolute;z-index: -1;}
+.arm{width: 100px;height: 48px;background:#09B9E4;border:2px solid black; }
+.hand-right{transform: rotate(28deg);transform-origin: 10px -88px;left:335px;position: absolute;z-index: -1;}
+.arm{width: 100px;height: 48px;background:#09B9E4;border:2px solid black; }
+.hand{width: 56px;height: 56px;border-radius: 50%;border:2px solid black;background: #ffffff;position: absolute;}
+.hand-left .hand{top: -4px;left: -41px;}
+.hand-right .hand{top: -4px;left: 86px;}
+.foots{width: 100%;height: 100%;position: relative;top: 142px;left: 68px;}
+.foot{width: 123px;height: 30px;border:2px solid black;display: inline-block;}
+.left-foot{border-radius: 25px 18px 18px 11px;}
+.right-foot{border-radius: 17px 26px 9px 15px;margin-left: -4px;}
